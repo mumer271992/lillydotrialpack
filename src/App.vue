@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <trial-pack />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import TrialPackContainer from './containers/TrialPackContainer.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    'trial-pack': TrialPackContainer,
   },
 };
 </script>
 
 <style>
-#app {
+body{
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  margin: 0px;
+  font-size: 16px;
+}
+h1{
+  font-size: 2.65rem;
+  font-weight: 500;
+  line-height: 1.1;
+}
+h2{
+  font-weight: 500;
+}
+a {
+  color: #00afab;
+  text-decoration: none;
 }
 </style>
